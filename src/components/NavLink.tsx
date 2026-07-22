@@ -10,7 +10,5 @@ export function NavLink({
   className?: string | undefined;
   path: Path | DefaultPath;
 }>) {
-  return (
-    <NavLinkExternal children={children} className={className} path={path} />
-  );
+    throw new Error("STUB");
 }

@@ -2,9 +2,7 @@ import type { ErrorInfo } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 
 function logError(error: unknown, info: ErrorInfo) {
-  // Do something with the error, e.g. log to an external API
-  error; // hidden
-  info; // hidden
+    throw new Error("STUB");
 }
 
 <ErrorBoundary FallbackComponent={ErrorFallback} onError={logError}>
@@ -14,9 +12,9 @@ function logError(error: unknown, info: ErrorInfo) {
 // <end>
 
 function ErrorFallback() {
-  return null;
+    throw new Error("STUB");
 }
 
 function YourApplication() {
-  return null;
+    throw new Error("STUB");
 }

@@ -14,61 +14,7 @@ import { NavLink } from "./components/NavLink";
 import { routes } from "./routes";
 
 export default function App() {
-  return (
-    <AppRoot
-      commonQuestions={commonQuestions}
-      enableSiteSearch
-      navLinks={
-        <div>
-          <NavLink path="/">Getting started</NavLink>
-          <NavSection label="Examples">
-            <NavLink path="/examples/fallback">Fallback content</NavLink>
-            <NavLink path="/examples/render-prop">Render prop</NavLink>
-            <NavLink path="/examples/fallback-component">
-              Fallback component
-            </NavLink>
-            <NavLink path="/examples/error-logging">Error logging</NavLink>
-            <NavLink path="/examples/async-user-code-errors">
-              Events & async methods
-            </NavLink>
-            <NavLink path="/examples/transition-errors">
-              Transition errors
-            </NavLink>
-            <NavLink path="/examples/retry-nearest-boundary">
-              Retry nearest boundary
-            </NavLink>
-          </NavSection>
-          <NavSection label="API">
-            <NavLink path="/api/error-boundary-props">ErrorBoundary</NavLink>
-            <NavLink path="/api/use-error-boundary-hook">
-              useErrorBoundary hook
-            </NavLink>
-            <NavLink path="/api/with-error-boundary-hoc">
-              withErrorBoundary HOC
-            </NavLink>
-            <NavLink path="/api/get-error-message">
-              getErrorMessage helper
-            </NavLink>
-          </NavSection>
-          <NavLink path="/common-questions">Common questions</NavLink>
-          <NavLink path="/support">Support</NavLink>
-        </div>
-      }
-      overview={
-        <>
-          <div>
-            React components and utils for managing runtime errors. Supports all
-            React renderers (including React DOM and React Native).
-          </div>
-          <Callout children={clientSideWarning} intent="warning" />
-        </>
-      }
-      packageDescription="runtime error handling"
-      packageName="react-error-boundary"
-      repositoryUrl={repository.url}
-      routes={routes}
-    />
-  );
+    throw new Error("STUB");
 }
 
 const clientSideWarning = (

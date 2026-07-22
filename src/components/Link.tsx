@@ -8,5 +8,5 @@ export function Link({
 }: HTMLAttributes<HTMLSpanElement> & {
   to: Path;
 }) {
-  return <ExternalLink to={to} {...rest} />;
+    throw new Error("STUB");
 }

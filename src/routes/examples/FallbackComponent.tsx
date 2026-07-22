@@ -13,8 +13,7 @@ function Fallback({ error, resetErrorBoundary }: FallbackProps) {
 <ErrorBoundary
   FallbackComponent={Fallback}
   onReset={(details) => {
-    // Reset the state of your app so the error doesn't happen again
-    details; // hidden
+      throw new Error("STUB");
   }}
 >
   <YourApplication />
@@ -23,5 +22,5 @@ function Fallback({ error, resetErrorBoundary }: FallbackProps) {
 // <end>
 
 function YourApplication() {
-  return null;
+    throw new Error("STUB");
 }

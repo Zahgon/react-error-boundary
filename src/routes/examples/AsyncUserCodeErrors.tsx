@@ -16,16 +16,7 @@ function UserProfile({ username }: { username: string }) {
   const { showBoundary } = useErrorBoundary();
 
   useEffect(() => {
-    fetchGreeting(username).then(
-      (response) => {
-        // Set data in state and re-render ...
-        response; // hidden
-      },
-      (error) => {
-        // Show error boundary
-        showBoundary(error);
-      },
-    );
+      throw new Error("STUB");
   }, [showBoundary, username]);
 
   return null;

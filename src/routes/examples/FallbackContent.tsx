@@ -7,5 +7,5 @@ import { ErrorBoundary } from "react-error-boundary";
 // <end>
 
 function YourApplication() {
-  return null;
+    throw new Error("STUB");
 }

@@ -1,16 +1,9 @@
 import { ErrorBoundary, getErrorMessage } from "react-error-boundary";
 
 <ErrorBoundary
-  fallbackRender={({ error, resetErrorBoundary }) => (
-    <div role="alert">
-      <p>Something went wrong:</p>
-      <pre style={{ color: "red" }}>{getErrorMessage(error)}</pre>
-      <button onClick={resetErrorBoundary}>Retry</button>
-    </div>
-  )}
+  fallbackRender={({ error, resetErrorBoundary }) => { throw new Error("STUB"); }}
   onReset={(details) => {
-    // Reset the state of your app so the error doesn't happen again
-    details; // hidden
+      throw new Error("STUB");
   }}
 >
   <YourApplication />
@@ -19,5 +12,5 @@ import { ErrorBoundary, getErrorMessage } from "react-error-boundary";
 // <end>
 
 function YourApplication() {
-  return null;
+    throw new Error("STUB");
 }
